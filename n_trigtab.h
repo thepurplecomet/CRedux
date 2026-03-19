@@ -123,7 +123,6 @@ const float degradtab[360] = {
     6.1785, 6.1959, 6.2134,
     6.2308, 6.2483, 6.2657
 };
-
 const float degsintab[360] = {
     0.0000, 0.0175, 0.0349,
     0.0523, 0.0698, 0.0872,
@@ -246,7 +245,6 @@ const float degsintab[360] = {
     -0.1045, -0.0872, -0.0698,
     -0.0523, -0.0349, -0.0175
 };
-
 const float degcostab[360] = {
     1.0000, 0.9998, 0.9994,
     0.9986, 0.9976, 0.9962,
@@ -369,7 +367,6 @@ const float degcostab[360] = {
     0.9945, 0.9962, 0.9976,
     0.9986, 0.9994, 0.9998,
 };
-
 float degtorad(int deg) {
     int sign = 1;
     if (deg < 0) sign = -1;
@@ -378,7 +375,6 @@ float degtorad(int deg) {
         deg -= 360;
     return sign*degradtab[deg];
 }
-
 int radtodeg(float rad) {
     int sign = 1;
     if (rad < 0) {
@@ -406,7 +402,6 @@ int radtodeg(float rad) {
         highdiff = (-1)*highdiff;
     return sign*(lowdiff <= highdiff ? low : high);
 }
-
 float qsind(int deg) {
     while (deg < 0)
         deg += 360;
@@ -414,7 +409,6 @@ float qsind(int deg) {
         deg -= 360;
     return degsintab[deg];
 }
-
 float qcosd(int deg) {
     while (deg < 0)
         deg += 360;
@@ -422,11 +416,9 @@ float qcosd(int deg) {
         deg -= 360;
     return degcostab[deg];
 }
-
 float qsinr(float rad) {
     return qsind(radtodeg(rad));
 }
-
 float qcosr(float rad) {
     return qcosd(radtodeg(rad));
 }
