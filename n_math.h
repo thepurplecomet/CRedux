@@ -177,28 +177,28 @@ unsigned long n) {
     sum += f(x);
     return sum*(h/2);
 }
-double strparr(double* table, unsigned long n, double h) {
-    double sum = table[0];
+double strparr(double* arr, unsigned long n, double h) {
+    double sum = arr[0];
     unsigned long x = 1;
     for (; x < n; x++)
-        sum += 2*table[x];
-    sum += table[n];
+        sum += 2*arr[x];
+    sum += arr[n];
     return sum*(h/2);
 }
-float strparrf(float* table, unsigned int n, float h) {
-    float sum = table[0];
+float strparrf(float* arr, unsigned int n, float h) {
+    float sum = arr[0];
     unsigned int x = 1;
     for (; x < n; x++)
-        sum += 2*table[x];
-    sum += table[n];
+        sum += 2*arr[x];
+    sum += arr[n];
     return sum*(h/2);
 }
-long double strparrl(long double* table, unsigned long n, long double h) {
-    long double sum = table[0];
+long double strparrl(long double* arr, unsigned long n, long double h) {
+    long double sum = arr[0];
     unsigned long x = 1;
     for (; x < n; x++)
-        sum += 2*table[x];
-    sum += table[n];
+        sum += 2*arr[x];
+    sum += arr[n];
     return sum*(h/2);
 }
 double ssmp(double a, double b, double (*f)(double), unsigned long n) {
@@ -271,23 +271,23 @@ unsigned long n) {
         return sum + (h*(f(b-h)+f(b)))/2;
     return sum;
 }
-double ssmparr(double* table, unsigned long n, double h) {
+double ssmparr(double* arr, unsigned long n, double h) {
     unsigned int extra = 0;
     if (n&1) {
         extra++;
         n--;
     }
-    double sum = table[0];
+    double sum = arr[0];
     unsigned int coeff = 4;
     for (unsigned long x = 1; x < n; x++, coeff = (coeff == 4 ? 2 : 4))
-        sum += coeff*table[x];
-    sum += table[n];
+        sum += coeff*arr[x];
+    sum += arr[n];
     sum *= (h/3);
     if (extra)
-        return sum + (h*(table[n]+table[n+1]))/2;
+        return sum + (h*(arr[n]+arr[n+1]))/2;
     return sum;
 }
-float ssmparrf(float* table, unsigned int n, float h) {
+float ssmparrf(float* arr, unsigned int n, float h) {
     unsigned int extra = 0;
     if (n&1) {
         extra++;
@@ -296,27 +296,27 @@ float ssmparrf(float* table, unsigned int n, float h) {
     double sum = table[0];
     unsigned int coeff = 4;
     for (unsigned int x = 1; x < n; x++, coeff = (coeff == 4 ? 2 : 4))
-        sum += coeff*table[x];
-    sum += table[n];
+        sum += coeff*arr[x];
+    sum += arr[n];
     sum *= (h/3);
     if (extra)
-        return sum + (h*(table[n]+table[n+1]))/2;
+        return sum + (h*(arr[n]+arr[n+1]))/2;
     return sum;
 }
-long double ssmparrl(long double* table, unsigned long n, long double h) {
+long double ssmparrl(long double* arr, unsigned long n, long double h) {
     unsigned int extra = 0;
     if (n&1) {
         extra++;
         n--;
     }
-    long double sum = table[0];
+    long double sum = arr[0];
     unsigned int coeff = 4;
     for (unsigned long x = 1; x < n; x++, coeff = (coeff == 4 ? 2 : 4))
-        sum += coeff*table[x];
-    sum += table[n];
+        sum += coeff*arr[x];
+    sum += arr[n];
     sum *= (h/3);
     if (extra)
-        return sum + (h*(table[n]+table[n+1]))/2;
+        return sum + (h*(arr[n]+arr[n+1]))/2;
     return sum;
 }
 
