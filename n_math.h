@@ -29,8 +29,8 @@
 #define max fmax
 #define maxf fmaxf
 #define maxl fmaxl
-#define absf fabsf
 #define absd fabs
+#define absf fabsf
 #define absld fabsl
 double slrie(double a, double b, double (*f)(double), double dx) {
     if (a > b) {
