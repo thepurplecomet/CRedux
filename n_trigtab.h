@@ -394,6 +394,8 @@ int radtodeg(float rad) {
         else
             return mid;
     }
+    if (rad >= 6.2745)
+        return 0;
     float lowdiff = rad - degradtab[low];
     if (lowdiff < 0)
         lowdiff = (-1)*lowdiff;
