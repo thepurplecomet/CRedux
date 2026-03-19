@@ -39,7 +39,7 @@ All sorts of things! The primary focus has been renaming functions and datatypes
 | CRedux Function | CRedux Header | Comment |
 | :--- | :--- | :--- |
 | strequ() | n_string.h | Uses stcmp() to check if strings are equal |
-| getl() | n_stdio.h | Simple method to get a line into a buffer from stdin and clear remaining characters |
+| getl() | n_stdio.h | Simple way to get a line from stdin and clear remaining characters |
 | slrie()/srrie()/smrie() | n_math.h | Calculate a left-hand/right-hand/midpoint Riemann's sum |
 | strp() | n_math.h | Calculate a Riemann's sum using the trapezoid rule |
 | ssmp() | n_math.h | Calculate a Riemann's sum using Simpson's rule + trapezoid rule |
