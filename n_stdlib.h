@@ -18,7 +18,7 @@
 #ifndef divllres
     typedef lldiv_t divllres;
 #endif
-#define stof atof // String to float
+#define stof atof
 #define stoi atoi
 #define stol atol
 #define stoll atoll
