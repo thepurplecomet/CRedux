@@ -5,6 +5,10 @@ A reckless reimagination of the C99 standard library
 
 Well, I did. We love C for its simplicity, but reinventing the wheel can get annoying and time-consuming. In order to keep up with the times while retaining compatibility, C has also adopted odd naming conventions that aren't always consistent, or just look ugly.
 
+## Who's this for?
+
+I recommend this for personal projects only. CRedux is here to make programming in C more intuitive with little sacrafice. If this were included into a large-scale production it could create a few refactoring nightmares, but if that doesn't sound like a problem, go ahead and try it!
+
 ## What's changed?
 
 All sorts of things! The primary focus has been renaming functions and datatypes, but I've also been working on expanding the C Standard Library with my own utilities.
