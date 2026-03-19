@@ -1,5 +1,5 @@
 # CRedux
-A reckless reimagination of the C99 standard library
+A reckless reimagination of the C99 Standard Library
 
 ## Who asked for this?
 
