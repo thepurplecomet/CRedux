@@ -7,7 +7,7 @@ Well, I did. We love C for its simplicity, but reinventing the wheel can get ann
 
 ## What's changed?
 
-All sorts of things! The primary focus has been renaming functions and datatypes, but I've also been qorking on expanding the C Standard Library with my own utilities.
+All sorts of things! The primary focus has been renaming functions and datatypes, but I've also been working on expanding the C Standard Library with my own utilities.
 
 ### Preview of Function Names
 
