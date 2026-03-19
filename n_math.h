@@ -1,6 +1,4 @@
 #include <math.h>
-#include <string.h>
-#include <stdlib.h>
 
 #ifndef N_MATH_H
 #define N_MATH_H
