@@ -9,7 +9,6 @@
 #endif
 #define strfocc strchr
 #define strlocc strrchr
-#define strfspn strpbrk
 #define strfsub strstr
 #define memfocc memchr
 #ifndef char16
