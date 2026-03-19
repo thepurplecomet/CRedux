@@ -12,7 +12,7 @@
 #define eulf expf
 #define eull expl
 #define eulm1 expm1
-#define eulmff expm1f
+#define eulm1f expm1f
 #define eulm1l expm1l
 #define base2 exp2
 #define base2f exp2f
